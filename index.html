@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let weight = +prompt(" Enter a weight");
+    let height = +prompt(" Enter a height");
+    let bmi = weight / (height * 2);
+    let result = '';
+    if (bmi < 18.5) {
+        result = 'Underweight'
+    } else if (18.5 < bmi < 25.0) {
+        result = 'Normal';
+    } else if (25.0 < bmi < 30.0) {
+        result = 'Overweight';
+    } else {
+        result = 'Obese';
+    }
+    alert(' Interpretation ' + result);
+
+</script>
+</body>
+</html>
